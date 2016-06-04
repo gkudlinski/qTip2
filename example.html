@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>My site</title>
+
+<!-- CSS file -->
+<link type="text/css" rel="stylesheet" href="dist/jquery.qtip.css" />
+</head>
+<body>
+
+<!-- jQuery FIRST i.e. before qTip (and all other scripts too usually) -->
+<script type="text/javascript" src="dist/jquery.min.js"></script>
+
+<!-- Include either the minifed or production version, NOT both!! -->
+<script type="text/javascript" src="dist/jquery.qtip.js"></script>
+
+<a href="#">Test</a>
+
+<script>
+	$('a').qtip({ // Grab some elements to apply the tooltip to
+    content: {
+        text: 'My common piece of text here'
+    }
+})
+</script>
+
+</body>
+</html>
